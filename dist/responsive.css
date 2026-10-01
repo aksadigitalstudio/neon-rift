@@ -1,0 +1,11 @@
+#score{display:block;transition:color .15s,transform .15s}
+#score.scoring{color:var(--cyan);transform:scale(1.07)}
+@media(max-width:600px) and (max-height:600px){
+ .intro{top:95px;transform:none}.intro>.eyebrow{display:none}
+ .intro h1{font-size:48px;line-height:1;margin:0 0 14px;letter-spacing:-2px}
+ .intro h1 br{display:none}.intro h1 em{margin-left:12px}.intro h1 em>span{display:none}
+ .subtitle{font-size:14px;margin:0 0 8px}.objective{font-size:12px;line-height:1.5;margin:0 0 16px}
+ .primary{min-height:44px;width:270px}.controls{margin:20px 0 0}.topbar{top:20px}
+ .modal-content h2{font-size:42px}.results{margin:15px 0;padding:15px 0}
+ .modal-content .primary{margin:18px auto}.health-panel{width:160px}.wave-panel strong{font-size:32px}
+}

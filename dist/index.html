@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050b16">
+  <meta name="description" content="Neon Rift — a procedural 3D orbital survival shooter. Survive the waves, destroy the swarm, chase the high score.">
+  <title>Neon Rift | Orbital Survival</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <main id="game" aria-label="Neon Rift survival arena">
+    <canvas id="viewport" aria-label="3D orbital combat arena"></canvas>
+    <div class="vignette"></div><div id="damage-flash"></div>
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Neon Rift home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 29 27 16 21 3 27Z"/><path d="m16 10 6 12-6-3-6 3Z"/></svg><span>NEON <b>RIFT</b><small>ORBITAL SURVIVAL</small></span></a>
+      <div class="station"><span class="signal"></span> STATION 07 <span class="divider">/</span> <span id="station-status">STANDBY</span></div>
+      <div class="scoreboard"><div><span>SCORE</span><strong id="score">000000</strong></div><div class="record"><span>PERSONAL BEST</span><strong id="best">000000</strong></div></div>
+    </header>
+    <section id="start-screen" class="screen start-screen">
+      <div class="intro">
+        <div class="eyebrow"><span></span> SIGNAL LOST. SURVIVAL ONLINE.</div>
+        <h1>NEON<br><em>RIFT<span>™</span></em></h1>
+        <p class="subtitle">One interceptor. An endless swarm.</p>
+        <p class="objective">Survive the waves. Destroy the swarm.<br>Chase the high score.</p>
+        <button id="play" class="primary" disabled><span id="play-label">INITIALIZING</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 10 7-10 7Z"/></svg></button>
+        <div class="controls"><div><div class="keyset"><kbd>W</kbd><span><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span></div><span>MOVE <small>or arrow keys</small></span></div><div><svg class="mouse" viewBox="0 0 24 32" aria-hidden="true"><rect x="4" y="2" width="16" height="27" rx="8"/><path d="M12 2v11H4"/></svg><span>AIM & FIRE <small>or hold Space</small></span></div></div>
+        <div class="intro-foot">PROCEDURAL 3D <i></i> ENDLESS WAVES <i></i> NO SECOND CHANCES</div>
+      </div>
+      <div class="arena-tag"><span class="bracket">⌜</span><div>ABANDONED COMBAT DECK<small>KEPLER SECTOR · LOW ORBIT</small></div><span class="bracket">⌟</span></div>
+    </section>
+    <section id="hud" class="hidden" aria-label="Player status">
+      <div class="health-panel"><div class="hud-label"><span>HULL INTEGRITY</span><strong><span id="health-value">100</span><small> / 100</small></strong></div><div class="health-track"><div id="health-bar"></div></div><div id="effects"></div></div>
+      <div class="weapon-panel"><span class="hud-label">INTERCEPTOR / NR-01</span><strong>PULSE CANNON <span id="weapon-status">READY</span></strong><small>HOLD TO FIRE · KEEP MOVING</small></div>
+      <div class="wave-panel"><span class="hud-label">CURRENT WAVE</span><div><strong id="wave">01</strong><span><b id="hostiles">0</b> HOSTILES<br><small id="wave-status">INCOMING</small></span></div></div>
+    </section>
+    <div id="announcement" role="status"><small id="announcement-small"></small><strong id="announcement-title"></strong></div>
+    <div id="toast" role="status"></div><div id="crosshair" class="hidden"><span></span></div>
+    <section id="pause-screen" class="screen modal hidden"><div class="modal-content"><div class="eyebrow">FLIGHT SUSPENDED</div><h2>PAUSED</h2><p>Take a breath. The swarm can wait.</p><button id="resume" class="primary">RESUME FLIGHT</button><small>ESC / P TO RESUME</small></div></section>
+    <section id="over-screen" class="screen modal hidden"><div class="modal-content"><div class="eyebrow">INTERCEPTOR SIGNAL LOST</div><h2>GAME <em>OVER</em></h2><p id="over-message">The rift claims another.</p><div class="results"><div><span>FINAL SCORE</span><strong id="final-score">0</strong></div><div><span>WAVE REACHED</span><strong id="final-wave">01</strong></div></div><button id="restart" class="primary">RESTART FLIGHT <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9a8 8 0 1 1-1 7M5 3v6h6"/></svg></button><small>A NEW FLIGHT. A HIGHER SCORE.</small></div></section>
+    <footer><span class="footer-coord">KEPLER–9 <i></i> 38.07 / −12.86</span><div><button id="pause" class="icon-button hidden" aria-label="Pause game" title="Pause (Esc)">Ⅱ</button><button id="sound" class="icon-button" aria-label="Mute sound" title="Toggle sound (M)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 9 4 0 5-4v14l-5-4H4Z"/><path id="sound-waves" d="M17 8q5 4 0 8M20 5q7 7 0 14"/></svg></button><button id="fullscreen" class="icon-button" aria-label="Toggle fullscreen" title="Fullscreen (F)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></svg></button><span class="footer-mode">DESKTOP FLIGHT MODE</span></div></footer>
+    <div id="error" class="hidden" role="alert"></div>
+  </main>
+  <script defer src="vendor/three.js"></script>
+  <script defer src="game.classic.js"></script>
+</body>
+</html>
