@@ -1,0 +1,7 @@
+.openai
+.sites-checkout
+.sites-runtime
+.git
+node_modules
+*.zip
+*.tar.gz

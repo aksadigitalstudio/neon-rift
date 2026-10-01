@@ -1,0 +1,9 @@
+.sites-runtime/
+node_modules/
+*.tar.gz
+*.zip
+.vercel/
+.openai/
+.sites-checkout/
+.env
+.env.*

@@ -1,0 +1,190 @@
+{
+  "checks": [
+    {
+      "name": "Title screen does not spawn enemies",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Play starts wave 1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "w movement",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "s movement",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "a movement",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "d movement",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "ArrowUp movement",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "ArrowDown movement",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "ArrowLeft movement",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "ArrowRight movement",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Arena boundary containment",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Smooth deceleration stops drift",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Space shooting destroys enemy and awards score",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Mouse aiming and left-button fire",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Enemy contact damages hull",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Strafer moves tangentially and fires",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Heavy requires repeated hits and awards 300",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Health pickup restores hull",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Rapid fire increases projectile rate",
+      "passed": true,
+      "details": "2 normal / 5 rapid"
+    },
+    {
+      "name": "Shield pickup blocks incoming damage",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Timed power-ups expire",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Pause freezes game",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Resume returns to gameplay",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Enemy spawn is safely separated",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Wave survival bonus adds points",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Wave progression reaches wave 2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Progression reaches heavy-enabled wave 3",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Normal enemy attacks cause player death",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Game Over shows score and wave",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Restart resets all combat state",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Resize 1280x720",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Resize 1920x1080",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Resize 900x600",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Resize 507x451",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Final gameplay test",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Restart geometry memory stays bounded",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "No critical browser console or runtime errors",
+      "passed": true,
+      "details": "[]"
+    }
+  ],
+  "errors": []
+}
